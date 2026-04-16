@@ -20,7 +20,12 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+#if canImport(FoundationEssentials)
+import FoundationEssentials
+#else
 import Foundation
+#endif
+
 
 /// Conform a type to this protocol to enable ``MessagePackDecoder`` to deserialize values of the type
 /// from a MessagePack extension.

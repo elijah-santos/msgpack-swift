@@ -2,7 +2,12 @@
 
 // snippet.hide
 
+#if canImport(FoundationEssentials)
+import FoundationEssentials
+#else
 import Foundation
+#endif
+
 import MessagePack
 
 // snippet.show

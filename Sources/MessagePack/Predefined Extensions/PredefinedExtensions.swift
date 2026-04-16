@@ -21,7 +21,7 @@
 // SOFTWARE.
 
 enum PredefinedExtensions {
-   static let typeIDToMetatype: [Int8: CodableAsMessagePackExtension.Type] = [
+   static let typeIDToMetatype: [Int8: any (CodableAsMessagePackExtension & Sendable).Type] = [
       MessagePackTimestamp.extensionTypeID: MessagePackTimestamp.self
    ]
 
